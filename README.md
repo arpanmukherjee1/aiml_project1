@@ -1,5 +1,4 @@
-# aiml_project1
-Automatic Image Captioning
+# Automatic Image Captioning
 
 # Objective: 
 Build an image captioning model to generate captions of an image using CNN
