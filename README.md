@@ -6,6 +6,10 @@ Build an image captioning model to generate captions of an image using CNN
 # Dataset Link: 
 Flickr8k_dataset
 
+Dataset Link: Flickr8k_dataset
+https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip
+https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip
+
 # Dataset description: 
 A collection of sentence-based image description
 1. Dataset consists of 8k images in JPEG format with different shapes and sizes.
