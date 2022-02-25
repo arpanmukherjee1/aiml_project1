@@ -22,6 +22,8 @@
 
 **Other Images**
 
+# Presentation
+https://docs.google.com/presentation/d/1c6iG2mtkjPObzWk3U1J0OCsC8M1rwTSXrVMDi2EHyd8/edit?usp=sharing
 
 # Conclusion
 
