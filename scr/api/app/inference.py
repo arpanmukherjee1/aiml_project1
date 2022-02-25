@@ -28,7 +28,7 @@ dwn.download_if_required({
     file_tokenizer: 'tokenizer.pickle',
     file_model: 'latest_model.h5',
     file_config: 'config.json'
-}, force=True)
+}, force=False)
 
 tokenizer = None
 config = None
