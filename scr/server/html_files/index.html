@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>AIML Inference</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      <!--Main Navigation-->
+  <header>
+    <style>
+      #intro {
+        height: 100vh;
+      }
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #intro {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #000 !important;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" target="_blank" >
+          <strong>AIML Project 1</strong> 
+        </a>
+		Image Captioning (Group3)
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+    <div id="intro" class="bg-image shadow-2-strong">
+	  <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
+        <source class="h-100" src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
+      </video>
+      <div class="mask d-flex align-items-center h-100 rgba-purple-slight" >
+        <div class="container">
+          <div class="row justify-content-center">
+		    <div class="col-xl-3 col-md-3 d-flex align-items-center" >
+			  <img src="https://media1.giphy.com/media/7VzgMsB6FLCilwS30v/giphy.gif" class="img-thumbnail shadow-2-strong" id="preview" alt="image preview"></img>
+			</div>
+            <div class="col-xl-5 col-md-8" >
+			
+              <form id="uplForm" enctype="multipart/form-data" class="rounded shadow-5-strong p-5" style="background-color: rgba(255, 255, 255, 0.8);">
+			  
+                <label class="form-label" >Upload Image</label>
+                <div class="form-outline mb-4">				  
+                  <input type="file" id="upl" class="form-control form-control-lg" accept="image/*"/>                  
+                </div>
+				
+				<div class="form-outline mb-4">
+				    <section class="text-center">
+						<div class="btn-group">
+						  <input type="radio" class="btn-check" name="options" id="greedy" value="greedy" autocomplete="off" checked />
+						  <label class="btn btn-outline-info" for="greedy">Greedy</label>
+
+						  <input type="radio" class="btn-check" name="options" id="beam" value="beam" autocomplete="off" />
+						  <label class="btn btn-outline-info" for="beam">Beam</label>
+						</div>
+					</section>
+				</div>
+				
+				<div class="form-outline mb-4">
+				    <button type="submit" id="pred" class="btn btn-primary btn-block btn-lg">Predict</button>
+				</div>
+
+                <label class="form-label">Predicted output</label>
+                <div class="form-outline mb-4">
+                  <textarea type="text" id="predOutput" class="form-control" readonly ></textarea>
+                </div>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <div class="py-4 text-center">
+        <img class="logo" src="https://cdn.exec.talentsprint.com/images/aiml-logo.png" alt="Artificial Intelligence and Machine Learning Home Page">
+    </div>
+
+    <hr class="m-0" />
+
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

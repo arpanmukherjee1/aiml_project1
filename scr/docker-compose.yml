@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+    api:
+        build: ./api/.
+        image: aimlproject1acr.azurecr.io/aiml_project1_api
+        container_name: aiml_project1_api
+        env_file:
+            - api.env
+        command: uvicorn main:app --host 0.0.0.0 --port 8080
+        networks:
+            - docker_network
+        ports:
+            - 8080:8080
+        
+    server:
+        build: ./server/.
+        image: aimlproject1acr.azurecr.io/aiml_project1_server
+        container_name: aiml_project1_server
+        volumes:
+            - ./server/html_files/:/usr/share/nginx/html
+        depends_on:
+            - api
+        networks:
+            - docker_network
+        ports:
+            - 80:80
+
+networks:
+    docker_network:
+        driver: bridge

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>AIML Inference</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      <!--Main Navigation-->
+  <header>
+    <style>
+      #intro {
+        height: 100vh;
+      }
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #intro {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #000 !important;
+      }
+    </style>
+	
+	<style>
+	
+.css-1gwmsaa {
+    max-width: 704px;
+    border-radius: 4px;
+    padding: 4px;
+}
+.css-wtpnzt {
+    border-radius: 4px;
+}
+.css-1ikudie {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    background: rgb(246, 247, 248);
+    border-radius: 4px;
+    border: 2px dashed rgb(206, 211, 217);
+}
+.css-1hyfx7x {
+    display: none;
+}
+.css-10klw3m {
+    height: 100%;
+}
+.css-14sbopy {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: inherit;
+    color: rgb(94, 106, 117);
+	text-align: center;
+}
+.css-1420bfh {
+    line-height: normal;
+    font-weight: 600;
+    font-family: inherit;
+    box-sizing: border-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: none;
+    box-shadow: none;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    transition: box-shadow 120ms linear 0s, border 120ms linear 0s, background-color 120ms linear 0s, color 120ms linear 0s;
+    height: 40px;
+    color: rgb(8, 117, 225);
+    border-radius: 4px;
+    border: 0px;
+    padding: 0px 8px;
+    min-width: auto;
+    font-size: 16px;
+}
+.css-1420bfh .wdc-text-button-label {
+    border-bottom: 2px solid transparent;
+    padding-top: 2px;
+    transition: border-color 0.3s ease 0s;
+}
+.css-1k6yql2 {
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.css-1kvbo9i {
+    display: inline-block;
+}
+.css-1rebdqa {
+    width: auto;
+    color: rgb(94, 106, 117);
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+}
+.css-xu41pk {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    margin-bottom: 4px;
+    color: rgb(30, 30, 30);
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+}
+.css-17qamad {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 0px;
+}
+.css-38z0xm {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 80px;
+    width: 80px;
+    min-height: 80px;
+    height: 80px;
+    background-color: rgb(246, 247, 248);
+    border: 1px solid rgb(206, 211, 217);
+    border-radius: 4px;
+}
+.css-3ye0ev {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 0px;
+}
+.css-1o2jhdo {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 24px;
+}
+.css-10klw3m {
+    height: 100%;
+}
+.WPAL, .wd-icon-container, .wd-icon-fill, .wd-icon-accent, .wd-icon-accent2 {
+    fill: currentColor;
+}
+.css-9qs7ma .wd-icon-background {
+    fill: transparent;
+}
+.css-180hh9c {
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 600;
+    color: rgb(73, 73, 73);
+    font-family: inherit;
+    box-sizing: border-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: none;
+    box-shadow: none;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    transition: box-shadow 120ms linear 0s, border 120ms linear 0s, background-color 120ms linear 0s, color 120ms linear 0s;
+    padding: 0px;
+    margin: -8px;
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+}
+	</style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" target="_blank" >
+          <strong>AIML Project 1</strong> 
+        </a>
+		Image Captioning (Group3)
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+    <div id="intro" class="bg-image shadow-2-strong">
+	  <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
+        <source class="h-100" src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
+      </video>
+      <div class="mask d-flex align-items-center h-100 rgba-purple-slight" >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-5 col-md-8" >
+			
+              <form id="uplForm" enctype="multipart/form-data" class="rounded shadow-5-strong p-5" style="background-color: rgba(255, 255, 255, 0.8);">
+			  
+                <label class="form-label" >Upload Image</label>
+                <!-- <div class="form-outline mb-4">				   -->
+                  <!-- <input type="file" id="upl" class="form-control form-control-lg" accept="image/*"/>                   -->
+                <!-- </div> -->
+				
+				<div data-automation-id="resumeUpload" class="css-1gwmsaa">
+					<div class="css-wtpnzt">
+						<div data-automation-id="file-upload-drop-zone" color="#0875e1" class="css-1ikudie">
+							<div class="css-131uyni">
+								<span class="css-mshdld">
+									<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" class="wd-accent-arrow-up-circle wd-accent" focusable="false" role="presentation" viewBox="0 0 56 56">
+										<g fill="none" fill-rule="evenodd" class="wd-icon-container">
+											<circle cx="28" cy="28" r="22" fill="#FFF" class="french-vanilla-100"/>
+											<path fill="#005DBA" fill-rule="nonzero" d="M28 52C14.745 52 4 41.255 4 28S14.745 4 28 4s24 10.745 24 24-10.745 24-24 24zm0-2c12.15 0 22-9.85 22-22S40.15 6 28 6 6 15.85 6 28s9.85 22 22 22zm-6.732-22.664a.506.506 0 0 1-.71-.003l-.701-.7a.495.495 0 0 1-.003-.71l7.777-7.779a.498.498 0 0 1 .352-.144.48.48 0 0 1 .356.144l7.778 7.778a.506.506 0 0 1-.003.71l-.7.701a.495.495 0 0 1-.711.003L29 21.634V37.26c0 .273-.226.5-.505.5h-.99a.495.495 0 0 1-.505-.5V21.604l-5.732 5.732z" class="color-500"/>
+										</g>
+									</svg>
+								</span>
+							</div>
+							<div class="css-wo778g">Drop files here</div>
+							<div class="css-xszj4y">
+								<div class="css-14sbopy">or</div>
+								<button data-automation-id="select-files" id="input-570" class="css-1420bfh">
+									<span class="wdc-text-button-label css-hrreuv">Select files</span>
+								</button>
+							</div>
+						</div>
+						<input data-automation-id="file-upload-input-ref" type="file" multiple="" class="css-1hyfx7x">
+						</div>
+						<div class="css-10klw3m">
+							<div data-automation-id="file-upload-item" class="css-1o2jhdo">
+								<div class="css-3ye0ev">
+									<div class="css-38z0xm">
+										<span class="css-a97blf">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="wd-icon-word wd-icon" focusable="false" role="presentation" viewBox="0 0 24 24">
+												<g fill-rule="evenodd" class="wd-icon-container">
+													<path d="M19 21V3H5v18z" class="wd-icon-background"/>
+													<path d="M4 2.494C4 2.221 4.226 2 4.496 2h15.007c.275 0 .497.225.497.494v19.012a.498.498 0 0 1-.497.494H4.496A.497.497 0 0 1 4 21.506V2.494zM6 4h12v16H6V4z" class="wd-icon-fill"/>
+													<path d="M14.131 13.35L12.941 8h-1.746l-1.172 5.35L9.045 8H7l1.816 8.531h2.127l1.119-4.863 1.143 4.863h2.133L17.148 8h-2.039z" class="wd-icon-accent"/>
+												</g>
+											</svg>
+										</span>
+									</div>
+									<div class="css-17qamad">
+										<div data-automation-id="ariaLive" hidden="" style="display: none;">
+											<div data-automation-id="ariaLiveMessage" aria-atomic="true" aria-live="polite" aria-relevant="all" role="alert" class="css-24tisu"></div>
+										</div>
+										<div class="css-xu41pk"></div>
+										<div class="css-1rebdqa"></div>
+										<div data-automation-id="file-upload-successful" class="css-1k6yql2">
+											<span class="css-1kvbo9i">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="wd-icon-check wd-icon" focusable="false" role="presentation" viewBox="0 0 24 24">
+													<g fill-rule="evenodd" class="wd-icon-container">
+														<path d="M8.657 15.85l10.26-10.26a.49.49 0 0 1 .703.01l.7.7a.495.495 0 0 1 .01.704L9.005 18.33a.488.488 0 0 1-.692.002L8.3 18.32l-4.946-4.946a.495.495 0 0 1 .003-.711l.7-.7a.507.507 0 0 1 .711-.004l3.889 3.89z" class="wd-icon-fill"/>
+													</g>
+												</svg>
+											</span>Successfully Uploaded!</div>
+									</div>
+								</div>
+								<div class="css-1451br9">
+									<button aria-label="" data-automation-id="delete-file" title="Delete" class="css-180hh9c">
+										<span class="css-9qs7ma">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="wd-icon-trash wd-icon" focusable="false" role="presentation" viewBox="0 0 24 24">
+												<g fill-rule="evenodd" class="wd-icon-container">
+													<path d="M6 7h12v14H6z" class="wd-icon-background"/>
+													<path d="M16 6V5H8v1h8zm3 2v13.504c0 .274-.22.496-.498.496H5.498A.5.5 0 0 1 5 21.504V8H3.5a.495.495 0 0 1-.5-.505v-.99C3 6.226 3.228 6 3.5 6H6V3.505C6 3.226 6.229 3 6.5 3h11c.276 0 .5.214.5.505V6h2.5c.276 0 .5.214.5.505v.99a.505.505 0 0 1-.5.505H19zM7 8v12h10V8H7z" class="wd-icon-fill"/>
+													<path d="M9 10.5c0-.276.214-.5.505-.5h.99c.279 0 .505.23.505.5v7c0 .276-.214.5-.505.5h-.99A.507.507 0 0 1 9 17.5v-7zm4 0c0-.276.214-.5.505-.5h.99c.279 0 .505.23.505.5v7c0 .276-.214.5-.505.5h-.99a.507.507 0 0 1-.505-.5v-7z" class="wd-icon-accent"/>
+												</g>
+											</svg>
+										</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				
+				<div class="form-outline mb-4">
+				    <button type="submit" id="pred" class="btn btn-primary btn-block btn-lg">Predict</button>
+				</div>
+
+                <label class="form-label">Predicted output</label>
+                <div class="form-outline mb-4">
+                  <textarea type="text" id="predOutput" class="form-control" readonly ></textarea>
+                </div>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <div class="py-4 text-center">
+        <img class="logo" src="https://cdn.exec.talentsprint.com/images/aiml-logo.png" alt="Artificial Intelligence and Machine Learning Home Page">
+    </div>
+
+    <hr class="m-0" />
+
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

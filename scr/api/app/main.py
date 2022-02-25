@@ -25,13 +25,13 @@ def get_root():
     }
     
 @app.post('/predict')
-def predict(image: UploadFile=File(...), diagnostics=False):
+def predict(image: UploadFile=File(...), diagnostics=False, searchmethod='greedy'):
   fb, name = mkstemp(suffix='.img')
   
   with open(name, 'wb') as file:
     shutil.copyfileobj(image.file, file)
   
-  pred = inference.predict(name)
+  pred = inference.predict(name, searchmethod)
   
   result = {
     'prediction': pred
@@ -41,6 +41,3 @@ def predict(image: UploadFile=File(...), diagnostics=False):
     result['fileName'] = name
   
   return result
-
-if __name__ == '__main__':
-    uvicorn.run(app, host='0.0.0.0', port=80)
