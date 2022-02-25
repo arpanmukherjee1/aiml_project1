@@ -1,0 +1,26 @@
+:: https://docs.microsoft.com/en-us/azure/container-instances/tutorial-docker-compose
+:: https://docs.docker.com/cloud/aci-integration/
+
+---- docker -----
+docker builder prune
+docker-compose -p aiml_project1 up --build
+
+:: create a resource grp and ACR with name : aimlproject1acr  - with admin enabled
+az login --use-device-code     :: for MFA enabled accounts or outlook.com
+az account show
+az acr login --name aimlproject1acr --expose-token    :: store the accessToken in $TOKEN
+
+docker-compose push
+az acr repository show --name aimlproject1acr --repository aiml_project1_server   :: see that the repo exists
+
+az deployment group create --resource-group aiml-project1 --template-file azuredeploy.json
+
+
+---- using docker cli  -- 
+
+docker login aimlproject1acr.azurecr.io --username 00000000-0000-0000-0000-000000000000 --password $TOKEN
+docker login azure
+docker context create aci aimlproject1acicontext
+docker context ls
+docker context use aimlproject1acicontext
+docker compose up
