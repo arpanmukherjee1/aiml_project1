@@ -1,13 +1,17 @@
 # Automatic Image Captioning
 
+This repository is created as a final 3-month project submission for **Advanced PG Certification program on AI/ML** sponsered by TalentSprint and IIIT-Hyderabad
+
+![](https://iiit-h.talentsprint.com/aiml/images/NSE-TS-logo.png) ![](https://iiit-h.talentsprint.com/aiml/images/machine-learninglab-logo.png)
+
 # Objective: 
 Build an image captioning model to generate captions of an image using CNN
 
 # Dataset Link: 
 Flickr8k_dataset
 
-Dataset Link: Flickr8k_dataset
-https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip
+Dataset Link: 
+https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip  
 https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip
 
 # Dataset description: 
@@ -31,13 +35,12 @@ languages (English, etc). Deploy the model and evaluate the model on 10 differen
 images.
 
 # Tools: 
-Natural Language Toolkit, TensorFlow, PyTorch, Keras
+Colab, Keras, Azure API
 
 # Deployments: 
-FastAPI (tiangolo.com), Cloud Application Platform | Heroku, Streamlit,
-Cloud Computing, Hosting Services, and APIs | Google Cloud
+FastAPI (tiangolo.com), Azure
 
 # Final Submissions:
-- Project Technical Report
-- Project Presentation with desired outcomes
-- Summary of 3 research papers
+- [Project Technical Report](src/README.md)
+- [Project Presentation with desired outcomes](experiments/README.md)
+- [Summary of 3 research papers](experiments/README.md#presentation)

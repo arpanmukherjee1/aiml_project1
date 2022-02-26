@@ -24,11 +24,11 @@ file_config = path + 'config.json'
     # file_config: 'https://drive.google.com/u/0/uc?id=1UVUbq_S3FRFKYm9wq973aeQobwiBTM2z'
 # }, force=False)
 
-dwn.download_if_required({
-    file_tokenizer: 'tokenizer.pickle',
-    file_model: 'latest_model.h5',
-    file_config: 'config.json'
-}, force=False)
+# dwn.download_if_required({
+    # file_tokenizer: 'tokenizer.pickle',
+    # file_model: 'latest_model.h5',
+    # file_config: 'config.json'
+# }, force=False)
 
 tokenizer = None
 config = None
