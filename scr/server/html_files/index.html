@@ -79,6 +79,11 @@
 
                 <label class="form-label">Predicted output</label>
                 <div class="form-outline mb-4">
+				  <div class="align-items-center" id="loader" style="display: none;">				  
+				    <strong>Caption generation in progress. Please wait...</strong>				  
+				    <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+				  </div>
+				  
                   <textarea type="text" id="predOutput" class="form-control" readonly ></textarea>
                 </div>
                 

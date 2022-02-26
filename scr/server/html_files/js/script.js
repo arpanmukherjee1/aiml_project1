@@ -1,6 +1,8 @@
 
 // https://stackoverflow.com/questions/19447435/ajax-upload-image
 
+//$('#loader').hide();
+
 $('#uplForm').on('submit', function(e){
 	
 	e.preventDefault();		
@@ -10,8 +12,8 @@ $('#uplForm').on('submit', function(e){
 		alert('Choose a file!!!');
 		return;
 	};
-	$('#pred').prop('disabled', true);
-	$('#predOutput').text('Thinking...');
+	showLoading(true);
+	
 	var form_data = new FormData();
 	form_data.append('image', f);
 	
@@ -29,11 +31,11 @@ $('#uplForm').on('submit', function(e){
         processData: false,
         contentType: false,
         success : function(resp){
-			$('#pred').prop('disabled', false);
+			showLoading(false);
 			$('#predOutput').text(resp.prediction);
         },
 		error: function(resp){
-			$('#pred').prop('disabled', false);
+			showLoading(false);
 			resText = 'ERROR !!';
 			if(resp.readyState == 0 && resp.statusText == 'error'){
 				resText = 'Backend API is not reachable. Try after sometime.';
@@ -43,6 +45,21 @@ $('#uplForm').on('submit', function(e){
 		}
 	});
 });
+
+function showLoading(isLoading){
+	if(isLoading){
+		$('#pred').prop('disabled', true);
+		$('#loader').show('slow', 'swing');
+		$('#predOutput').hide('slow', 'swing');
+		// $('#predOutput').text('Trying to generate captions. Please wait...');
+	}
+	
+	else{
+		$('#pred').prop('disabled', false);
+		$('#loader').hide('slow', 'swing');
+		$('#predOutput').show('slow', 'swing');
+	}
+};
 
 originalPreviewSrc = null;
 

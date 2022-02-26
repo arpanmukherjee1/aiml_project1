@@ -132,10 +132,10 @@ def predict(filepath, search_method):
     photo = extract_feat(filepath)
     max_len = config['max_len']
     is_beam = search_method == 'beam'
-  
+    k=5
     if is_beam:
-        pred = beam_generate_desc(model, tokenizer, photo, max_len, 3)
-        return [' '.join(x[1:-1]) for x in pred][2]
+        pred = beam_generate_desc(model, tokenizer, photo, max_len, k)
+        return [' '.join(x[1:-1]) for x in pred][k-1]
     else:
         pred = generate_desc(model, tokenizer, photo, max_len)
         return ' '.join(pred.split()[1:-1])
