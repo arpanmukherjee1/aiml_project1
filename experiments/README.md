@@ -12,16 +12,22 @@
 
 **Positive samples**
 
-![positive1.png](./samples/positive1.png)   ![positive2.png](./samples/positive2.png)
+| | |
+|---|---|
+|![positive1.png](./samples/positive1.png) | ![positive2.png](./samples/positive2.png)|
 
 
 **Negative samples**
 
-![error1.png](./samples/error1.png)   ![error2.png](./samples/error2.png)
+| | |
+|---|---|
+|![error1.png](./samples/error1.png) | ![error2.png](./samples/error2.png)|
 
 
 **Other Images**
 
+| | | |
+|---|---|---|
 | ![Capture.JPG](./samples/Capture.JPG) | ![Capture2.JPG](./samples/Capture2.JPG) | ![Capture1.JPG](./samples/Capture1.JPG) |
 | ![Capture3.JPG](./samples/Capture3.JPG) | ![Capture4.JPG](./samples/Capture4.JPG) | ![Capture6.JPG](./samples/Capture6.JPG) |
 | ![Capture7.JPG](./samples/Capture7.JPG) | ![Capture8.JPG](./samples/Capture8.JPG) | ![Capture12.JPG](./samples/Capture12.JPG) |
