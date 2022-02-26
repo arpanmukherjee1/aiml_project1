@@ -22,8 +22,18 @@
 
 **Other Images**
 
+| ![Capture.JPG](./samples/Capture.JPG) | ![Capture2.JPG](./samples/Capture2.JPG) | ![Capture1.JPG](./samples/Capture1.JPG) |
+| ![Capture3.JPG](./samples/Capture3.JPG) | ![Capture4.JPG](./samples/Capture4.JPG) | ![Capture6.JPG](./samples/Capture6.JPG) |
+| ![Capture7.JPG](./samples/Capture7.JPG) | ![Capture8.JPG](./samples/Capture8.JPG) | ![Capture12.JPG](./samples/Capture12.JPG) |
+
+
 # Presentation
 https://docs.google.com/presentation/d/1c6iG2mtkjPObzWk3U1J0OCsC8M1rwTSXrVMDi2EHyd8/edit?usp=sharing
 
 # Conclusion
 
+In the experiment setup 2 model architectures are analysed with 2 different featore extractors (VGG16 and InceptionV3)  
+
+GLOVE word embeddings was used and out of multiple possible configurations 4 were selected and the BLEU scores were recorded.  
+
+Future work would include attention models and converting the model to ONNX format.
