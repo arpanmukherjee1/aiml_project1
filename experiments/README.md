@@ -15,23 +15,23 @@ Out of the above 4 experimental configurations, **exp_1a** with bi-directional L
 
 | | |
 |---|---|
-|![positive1.png](./samples/positive1.png) | ![positive2.png](./samples/positive2.png)|
+|![positive1.png](./test_results/positive1.png) | ![positive2.png](./test_results/positive2.png)|
 
 
 **Negative samples**
 
 | | |
 |---|---|
-|![error1.png](./samples/error1.png) | ![error2.png](./samples/error2.png)|
+|![error1.png](./test_results/error1.png) | ![error2.png](./test_results/error2.png)|
 
 
 **Other Images**
 
 | | | |
 |---|---|---|
-| ![Capture.JPG](./samples/Capture.JPG) | ![Capture2.JPG](./samples/Capture2.JPG) | ![Capture1.JPG](./samples/Capture1.JPG) |
-| ![Capture3.JPG](./samples/Capture3.JPG) | ![Capture4.JPG](./samples/Capture4.JPG) | ![Capture6.JPG](./samples/Capture6.JPG) |
-| ![Capture7.JPG](./samples/Capture7.JPG) | ![Capture8.JPG](./samples/Capture8.JPG) | ![Capture12.JPG](./samples/Capture12.JPG) |
+| ![Capture.JPG](./test_results/Capture.JPG) | ![Capture2.JPG](./test_results/Capture2.JPG) | ![Capture1.JPG](./test_results/Capture1.JPG) |
+| ![Capture3.JPG](./test_results/Capture3.JPG) | ![Capture4.JPG](./test_results/Capture4.JPG) | ![Capture6.JPG](./test_results/Capture6.JPG) |
+| ![Capture7.JPG](./test_results/Capture7.JPG) | ![Capture8.JPG](./test_results/Capture8.JPG) | ![Capture12.JPG](./test_results/Capture12.JPG) |
 
 
 # Presentation
